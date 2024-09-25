@@ -39,8 +39,8 @@ ERROR 1142 (42000): CREATE command denied to user 'data_analyst'@'localhost' for
 -- QUERY 4
 -- Try to update a title of a film. Write the update script.
 
-SELECT title FROM film WHERE film_id = 371;
-UPDATE film SET title='The bigbang leyend' WHERE film_id = 371;
+SELECT title FROM film WHERE film_id = 233;
+UPDATE film SET title='Budy the reborn' WHERE film_id = 233;
 /*
 Response: 
 Query OK, 1 row affected (0,04 sec)
@@ -56,7 +56,7 @@ FLUSH PRIVILEGES;
 -- QUERY 6
 -- Login again with data_analyst and try again the update done in step 4. Show the result.
 
-UPDATE film SET title='The bigbang theory' WHERE film_id = 371;
+UPDATE film SET title='Budy the renegade' WHERE film_id = 233;
 /*
 Response: 
 ERROR 1142 (42000): UPDATE command denied to user 'data_analyst'@'localhost' for table 'film'
